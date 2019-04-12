@@ -7,7 +7,8 @@ const blogpostSchema = mongoose.Schema({
     content: { type: String},
     author: {
         firstName: String,
-        lastName: true},
+        lastName: String
+    },
     created: {type: Date, default: Date.now}
 });
 
